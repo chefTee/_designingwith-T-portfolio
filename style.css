@@ -34,6 +34,7 @@ header{
     font-weight: bolder;
     margin-bottom: var(--margin-bottom);
     letter-spacing: 15px;
+    text-align: center;
 }
 .picture img{
     border-radius: .75em;
@@ -78,23 +79,22 @@ header{
     position: relative;
 }
 .my-work-bg{
-   
     width: 65vw;
     height: 630px;
 }
-/* add background image */
+/* add background colour */
 .my-work-image img{
     position: absolute;
     top: 40%;
     left: 50%;
     margin-bottom: 3rem;
     transform: translate(-50%, -50%);
-    width: ;
-    height: 400px;
+    width: 60vw;
+    height: 390px;
 }
 .my-work-summary-section{
     position: absolute;
-    bottom: 10%;
+    bottom: 11%;
     left: 50%;
     transform: translate(-50%);
     width: 60vw;
@@ -249,4 +249,102 @@ footer{
 }
 .footer-social-icons a img:hover{
     transform: scale(1.1);
+}
+
+
+@media (max-width:1110px){
+    .name p{
+        font-size: 35px;
+        letter-spacing: 10px;
+    }
+}
+@media (max-width: 1180px){
+    .my-work-bg{
+        width: 70vw;
+        height: 650px;
+    }
+    .my-work-summary-section{
+        width: 50vw;
+    }
+    .my-work-summary-title{
+        margin-top: 5rem;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .my-work-summary p{
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px){
+    header{
+        padding: 2rem  var(--padding) 0rem;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .name p{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: var(--margin-bottom);
+        letter-spacing: 9px;
+        text-align: center;
+    }
+    .my-work-bg{
+        width: 70vw;
+        height: 500px;
+    }
+    .my-work-image img{
+        width: 400px;
+        height: 400px;
+    } 
+    .my-work-summary-section{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 55vw;
+    }
+    .my-work-summary-title{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .my-work-summary p{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .expertise-summary{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 720px){
+    header{
+        padding: 3rem 4rem 3rem ;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .user-profile{
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .name p{
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: var(--margin-bottom);
+        letter-spacing: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .picture img{
+        border-radius: .75em;
+        width: 480px;
+        height: 450px;
+    }
+
 }
